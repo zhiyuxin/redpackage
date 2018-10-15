@@ -1,0 +1,491 @@
+/*content*/
+.content{
+    width: 100%;
+    height: 16rem;
+    background: url("../images/redpack_bgc.jpg")no-repeat center;
+    background-size: cover;
+}
+.content .icon{
+    display: block;
+    width: 100%;
+    height: 1.04rem;
+}
+.content .icon .left img{
+    float: left;
+    width: 0.69rem;
+    height: 0.69rem;
+    margin: 0.31rem 0 0 0.36rem;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    100% {-webkit-transform: rotate(720deg);}
+}
+@keyframes mymove {
+    100% {transform: rotate(720deg);}
+}
+.content .icon .right img{
+    float: right;
+    width: 1.2rem;
+    height: 1.16rem;
+    margin: 0.23rem 0.18rem 0 0;
+    /*animation:hdjn 2s infinite;*/
+    /*-webkit-animation:hdjn 2s infinite;*/
+}
+/*@keyframes hdjn{*/
+/*0%{*/
+/*width: 1.2rem;*/
+/*height: 1.16rem;*/
+/*}*/
+/*50%{*/
+/*width: 1.5rem;*/
+/*height: 1.45rem;*/
+/*}*/
+/*100%{*/
+/*width: 1.2rem;*/
+/*height: 1.16rem;*/
+
+/*}*/
+/*}*/
+/*@-webkit-keyframes hdjn{*/
+/*0%{*/
+/*opacity: 0;*/
+/*}*/
+/*50%{*/
+/*opacity: 100;*/
+/*}*/
+/*100%{*/
+/*opacity: 0;*/
+/*}*/
+/*}*/
+.content .top{
+    display: block;
+}
+.content .top img{
+    width: 93%;
+    height: 3.45rem;
+    margin: 0 3.5% 1rem 3.5%;
+}
+.content .chai{
+    display: none;
+    padding-top: 2.5rem;
+    text-align: center;
+}
+.content .chai img{
+    width: 56%;
+    height: 4.6rem;
+    margin: 0 22% 0.7rem 22%;
+}
+.content .chai p{
+    font-size: 0.25rem;
+    color: #fff;
+}
+.content .chai p em{
+    color: #FFF700;
+}
+.content .msg{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.content .msg p{
+    font-size: 0.31rem;
+    line-height: 0.52rem;
+    text-shadow:#fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+    -webkit-text-shadow:#fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+    -moz-text-shadow:#fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+}
+.content .center{
+    display: block;
+}
+.content .center img{
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+.content .li_num{
+    width: 78%;
+    height: 4.13rem;
+    color: #fff;
+    background:rgba(0,0,0,0.8);
+    margin: 0.68rem 11% 0 11%;
+}
+.content .li_num .head{
+    padding: 0.43rem 1.93rem;
+    text-align: center;
+    font-size: 0.22rem;
+}
+.content .li_num .msg_tel{
+    padding: 0 0.5rem 0 0.5rem;
+    text-align: center;
+    height: 2.65rem;
+    overflow: hidden;
+}
+.content .li_num .msg_tel ul{
+    width: 100%;
+    height: 100%;
+}
+.content .li_num .msg_tel ul li{
+    font-size: 0.2rem;
+    line-height: 0.45rem;
+    letter-spacing: 0.02rem;
+}
+/*弹层*/
+.mask{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*弹层-message*/
+.msg_mask1{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.msg_mask1 div{
+    width: 80%;
+    height: 4.73rem;
+    margin: 1.33rem 10% 0 10%;
+    background-color: #fff;
+    z-index: 999;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.msg_mask1 div .fp {
+    height: 1.43rem;
+    line-height: 1.43rem;
+    font-size: 0.28rem;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    position: relative;
+}
+.msg_mask1 div img {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+}
+.msg_mask1 div input[type=text] {
+    width: 4.5rem;
+    height: 0.63rem;
+    border: 0.01rem solid #979797;
+    padding-left: 0.1rem;
+    font-size: 0.23rem;
+    margin-bottom: 0.33rem;
+}
+.msg_mask1 div button {
+    width: 1.34rem;
+    height: 0.52rem;
+    font-size: 0.22rem;
+    background-color: #0084FF;
+    color: #fff;
+    margin-top: 0.4rem;
+}
+/*中奖弹层*/
+.winning_mask2{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.winning_mask2 div .top{
+    width: 32%;
+    color: #fff;
+    font-size: 0.3rem;
+    text-align: center;
+    margin: 1.66rem 34% 0.34rem 34%;
+}
+.winning_mask2 div img{
+    width: 56%;
+    height: 3.72rem;
+    margin: 0 22% 0.4rem 22%;
+}
+.winning_mask2 div .num{
+    text-align: center;
+    color: yellow;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+}
+.winning_mask2 div .text{
+    text-align: center;
+    color: #fff;
+    font-size: 0.3rem;
+    margin-bottom: 0.55rem;
+}
+.winning_mask2 div .winning_mask2_bottom{
+    display: block;
+    text-align: center;
+    width: 48%;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    font-size: 0.26rem;
+    color: #fff;
+    margin: 0 26% 0 26%;
+    background-color: #00A8FF;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+/*没中奖弹层*/
+.lose_mask3{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.lose_mask3 div .top{
+    width: 32%;
+    color: #fff;
+    font-size: 0.32rem;
+    text-align: center;
+    margin: 3.09rem 34% 0.14rem 34%;
+    text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+    -webkit-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+    -moz-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+}
+.lose_mask3 div .center{
+    width: 32%;
+    color: #fff;
+    font-size: 0.26rem;
+    padding-left: 0.1rem;
+    margin: 0 34% 0.46rem 34%;
+}
+.lose_mask3 div img{
+    width: 46%;
+    height: 2.13rem;
+    margin: 0 27% 1.49rem 27%;
+}
+.lose_mask3 div .num{
+    text-align: center;
+    color: yellow;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+}
+.lose_mask3 div .text{
+    text-align: center;
+    color: #fff;
+    font-size: 0.3rem;
+    margin-bottom: 0.55rem;
+}
+.lose_mask3 div .again{
+    display: block;
+    text-align: center;
+    width: 48%;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    font-size: 0.26rem;
+    color: #fff;
+    margin: 0 26% 0.3rem 26%;
+    background-color: #00A8FF;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.lose_mask3 div .follow{
+    display: block;
+    text-align: center;
+    width: 48%;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    font-size: 0.26rem;
+    color: #fff;
+    margin: 0 26% 0 26%;
+    background-color: #00A8FF;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+/*机会用完弹层*/
+.nochance_mask4{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.nochance_mask4 div{
+    width: 66%;
+    height: 2.25rem;
+    margin: 4.75rem 17% 0 17%;
+    background-color: #fff;
+}
+.nochance_mask4 div p{
+    text-align: center;
+}
+.nochance_mask4 div .top{
+    width: 100%;
+    color: #000;
+    font-size: 0.25rem;
+    padding-top: 0.56rem;
+}
+.nochance_mask4 div .center{
+    font-size: 0.25rem;
+    padding-top: 0.13rem;
+}
+.nochance_mask4 div .bottom{
+    display: block;
+    width: 100%;
+    height: 0.62rem;
+    font-size: 0.24rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 0.29rem;
+    line-height: 0.62rem;
+    background-color: #00A2FF;
+}
+/*个人中心弹层*/
+.percen_mask5{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.8);
+}
+.percen_mask5 .percen_mask5_close{
+    display: block;
+    width: 0.31rem;
+    height: 0.31rem;
+    background: url(../images/close.png)no-repeat center;
+    position: absolute;
+    right: 0.31rem;
+    top: 0.31rem;
+}
+.percen_mask5 .tab{
+    width: 100%;
+    height: 1.15rem;
+}
+
+.percen_mask5 .tab ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /*border-bottom: 0.02rem solid #fff;*/
+}
+.percen_mask5 .tab ul li{
+    width: 49%;
+    color: #fff;
+    font-size: 0.25rem;
+    margin-top: 0.67rem;
+    display: inline-block;
+    position: relative;
+}
+.percen_mask5 .tab ul li em{
+    width: 0.14rem;
+    height: 0.14rem;
+    background-color: #FF0000;
+    display: block;
+    position: absolute;
+    right: 0.85rem;
+    top: -0.06rem;
+    border-radius: 100%;
+}
+.active{
+    color: #F5FF01;
+    font-size: 0.28rem;
+    border-bottom: 0.05rem solid #fff;
+}
+.percen_mask5 .tab hr{
+    height: 0.02rem;
+    border: none;
+    background-color: #D7D8D8;
+    margin: -0.07rem 0 0 0;
+}
+.percen_mask5 .percen_mask5_left{
+    display: none;
+    margin-top: 0.54rem;
+}
+.percen_mask5 .percen_mask5_left div{
+    padding-left: 0.35rem;
+}
+.percen_mask5 .percen_mask5_left a{
+    display: block;
+    width: 1.50rem;
+    height: 0.48rem;
+    text-align: center;
+    line-height: 0.48rem;
+    font-size: 0.25rem;
+    font-weight: bold;
+    padding: 0.05rem 0.15rem;
+    margin-bottom: 0.1rem;
+    background-color: #fff;
+}
+.percen_mask5 .percen_mask5_left p{
+    font-size: 0.22rem;
+    color: #fff;
+    line-height: 0.45rem;
+}
+.percen_mask5 .percen_mask5_left p em{
+    color: #FFF700;
+}
+.percen_mask5 .percen_mask5_left .jp, .time, .zbdw, .jszc, .hdsm{
+    margin-bottom: 0.2rem;
+}
+.percen_mask5 .percen_mask5_right{
+    display: block;
+}
+.percen_mask5 .percen_mask5_right .y_top{
+    display: block;
+    width: 85%;
+    height: 1.86rem;
+    margin: 0.54rem 7.5% 4.15rem 7.5%;
+    border: 0.03rem solid #fff;
+    border-radius: 0.05rem;
+}
+.percen_mask5 .percen_mask5_right .n_top{
+    display: none;
+    font-size: 0.25rem;
+    color: #fff;
+    margin: 0.57rem 0 5.72rem 0.32rem;
+}
+.percen_mask5 .percen_mask5_right .y_top p{
+    font-size: 0.26rem;
+    color: #fff;
+    line-height: 0.52rem;
+    padding: 0.51rem 0.53rem;
+}
+.percen_mask5 .percen_mask5_right .bottom .follow{
+    display: block;
+    text-align: center;
+    width: 48%;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    font-size: 0.26rem;
+    color: #fff;
+    margin: 0 26% 0 26%;
+    background-color: #00A8FF;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+/*二维码弹层*/
+.code{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.code img{
+    width: 54%;
+    height: 3.44rem;
+    margin: 50% 23% 50% 23%;
+}

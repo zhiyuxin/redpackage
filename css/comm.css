@@ -1,0 +1,67 @@
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 0.12rem;
+    width: 100%;
+    max-width: 6.4rem;
+    min-width: 3.2rem;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+.clearfix::before,
+.clearfix::after{
+    content: '.';
+    height: 0;
+    line-height: 0;
+    display: block; /*出错点*/
+    visibility: hidden;
+    clear: both;
+}
+
+a {
+    color: #000;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+::selection {
+    background: #FFF;
+    color: #333;
+}
+::-moz-selection {
+    background: #FFF;
+    color: #333;
+}
+img {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+input::-webkit-input-placeholder{
+    color:#ccc;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#ccc;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#ccc;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#ccc;
+}
+input::-webkit-search-cancel-button{
+    display: none;
+}
+input[type=search]::-ms-clear{
+    display: none;
+}
